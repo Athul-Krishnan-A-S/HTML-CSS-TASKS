@@ -256,4 +256,16 @@ a {
         font-size: 0.9rem;
         content: "Sign in with ";
     }
+    .form-fields {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 3rem;
+    }
+    
+    .form-fields div {
+        display: flex;
+        flex-direction: column;
+        width: 44%;
+    }
 }
