@@ -20,29 +20,97 @@ body {
     gap: 5rem;
 }
 
+:root {
+    --conicAngle: 30deg;
+}
+
 .container {
+
     width: 100%;
     height: 100%;
-    --s: 200px; /* control the size */
+    --s: 200px;
+    /* control the size */
     --c1: #1d1d1d;
     --c2: #4e4f51;
     --c3: #3c3c3c;
-  
-    background: repeating-conic-gradient(
-          from 30deg,
-          #0000 0 120deg,
-          var(--c3) 0 180deg
-        )
-        calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
-      repeating-conic-gradient(
-        from 30deg,
-        var(--c1) 0 60deg,
-        var(--c2) 0 120deg,
-        var(--c3) 0 180deg
-      );
+
+    background: repeating-conic-gradient(from 30deg,
+            #0000 0 120deg,
+            var(--c3) 0 180deg) calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+        repeating-conic-gradient(from var(--conicAngle),
+            var(--c1) 0 60deg,
+            var(--c2) 0 120deg,
+            var(--c3) 0 180deg);
     background-size: var(--s) calc(var(--s) * 0.577);
-  }
-  
+    animation: rotateGradient 1s linear infinite;
+}
+
+@keyframes rotateGradient {
+    0% {
+        --conicAngle: 0deg;
+    }
+    5% {
+        --conicAngle: 18deg; 
+    }
+    10% {
+        --conicAngle: 36deg; 
+    }
+    15% {
+        --conicAngle: 54deg;
+    }
+    20% {
+        --conicAngle: 72deg; 
+    }
+    25% {
+        --conicAngle: 90deg; 
+    }
+    30% {
+        --conicAngle: 108deg; 
+    }
+    35% {
+        --conicAngle: 126deg; 
+    }
+    40% {
+        --conicAngle: 144deg; 
+    }
+    45% {
+        --conicAngle: 162deg; 
+    }
+    50% {
+        --conicAngle: 180deg; 
+    }
+    55% {
+        --conicAngle: 198deg; 
+    }
+    60% {
+        --conicAngle: 216deg; 
+    }
+    65% {
+        --conicAngle: 234deg; 
+    }
+    70% {
+        --conicAngle: 252deg; 
+    }
+    75% {
+        --conicAngle: 270deg; 
+    }
+    80% {
+        --conicAngle: 288deg; 
+    }
+    85% {
+        --conicAngle: 306deg; 
+    }
+    90% {
+        --conicAngle: 324deg; 
+    }
+    95% {
+        --conicAngle: 342deg; 
+    }
+    100% {
+        --conicAngle: 360deg; 
+    }
+}
+
 input[type="checkbox"] {
     display: none;
 }
