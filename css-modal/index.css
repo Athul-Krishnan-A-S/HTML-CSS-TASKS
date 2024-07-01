@@ -97,7 +97,7 @@ input[type="submit"] {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     display: none;
-    
+
 }
 
 #checkbox:checked+.modal-toggle+.modal-container {
@@ -110,33 +110,42 @@ input[type="submit"] {
 }
 
 .modal-toggle-x {
-    /* position: absolute; */
-    left: 68%;
-    bottom: 68%;
+    position: relative;
+    left: 56%;
+    bottom: 8%;
     font-size: 2rem;
     font-weight: bold;
-    color: white;
-    background-color: orange;
+    color: rgb(255, 0, 0);
     padding: 2rem;
     border-radius: 30px;
 }
-@media (max-width:768){
+
+@media (max-width:768px) {
     .image-container {
         width: 30% !important;
         background-color: gray;
         height: 10%;
         padding: 2rem !important;
     }
-    .modal{
-        width: 100%;
-    }
+
     .modal-toggle-x {
         position: relative !important;
         left: 8rem !important;
-        bottom: 68%;
-        font-size: 2rem;
+        bottom: 2%;
+        font-size: 1rem;
+       padding-block: 1rem !important;
+        width: 8rem !important;
+        text-align: center;
+        padding: 0;
         font-weight: bold;
         color: red;
     }
-    
+
+    .modal {
+        width: 60% !important;
+        height: 50%;
+        padding: 2rem !important;
+        background-color: white;
+    }
+
 }
