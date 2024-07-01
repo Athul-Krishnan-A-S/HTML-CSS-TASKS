@@ -43,7 +43,7 @@ body {
             var(--c2) 0 120deg,
             var(--c3) 0 180deg);
     background-size: var(--s) calc(var(--s) * 0.577);
-    animation: rotateGradient 1s linear infinite;
+    /* animation: rotateGradient 1s linear infinite; */
 }
 
 @keyframes rotateGradient {
@@ -51,6 +51,7 @@ body {
         --conicAngle: 0deg;
         --color: green;
         --c3: #ffffff;
+        scale: 1;
     }
 
     5% {
@@ -62,6 +63,7 @@ body {
     10% {
         --conicAngle: 36deg;
         --color: rgb(218, 106, 15);
+        scale: 1.2;
     }
 
     15% {
@@ -72,6 +74,7 @@ body {
     20% {
         --conicAngle: 72deg;
         --color: rgb(247, 7, 235);
+        scale: 1.3;
         
     }
 
@@ -83,6 +86,7 @@ body {
     30% {
         --conicAngle: 108deg;
         --color: #f56ef5;
+        scale: 1.4;
     }
 
     35% {
@@ -94,6 +98,7 @@ body {
     40% {
         --conicAngle: 144deg;
         --color: rgb(250, 216, 122);
+        scale: 1.5;
     }
 
     45% {
@@ -104,6 +109,7 @@ body {
     50% {
         --conicAngle: 180deg;
         --color: rgb(247, 250, 49);
+        scale: 1.6;
     }
 
     55% {
@@ -116,16 +122,19 @@ body {
         --conicAngle: 216deg;
         --color: rgb(106, 89, 252);
         --c1: #000000;
+        scale: 1.7;
     }
 
     65% {
         --conicAngle: 234deg;
         --color: rgb(255, 15, 255);
+        
     }
 
     70% {
         --conicAngle: 252deg;
         --color: rgb(65, 235, 65);
+        scale: 1.8;
     }
 
     75% {
@@ -135,6 +144,7 @@ body {
     80% {
         --conicAngle: 288deg;
         --c2: #ffee00;
+        scale: 1.9;
     }
 
     85% {
@@ -144,14 +154,17 @@ body {
     90% {
         --conicAngle: 324deg;
         --c2: #ffffff;
+        scale: 1.5;
     }
 
     95% {
         --conicAngle: 342deg;
+        scale: 1.1;
     }
 
     100% {
         --conicAngle: 360deg;
+        scale: 1;
         
     }
 }
@@ -164,7 +177,7 @@ input[type="checkbox"] {
     width: 10%;
     background-color: var(--color);
     padding: 2rem;
-    border-radius: 30px;
+    border-radius: 10px 10px 12px 10px 25px 14px;
     text-align: center;
     color: white;
 }
