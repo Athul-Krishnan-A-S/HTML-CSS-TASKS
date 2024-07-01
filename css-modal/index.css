@@ -22,6 +22,7 @@ body {
 
 :root {
     --conicAngle: 30deg;
+    --color: green;
 }
 
 .container {
@@ -48,66 +49,110 @@ body {
 @keyframes rotateGradient {
     0% {
         --conicAngle: 0deg;
+        --color: green;
+        --c3: #ffffff;
     }
+
     5% {
-        --conicAngle: 18deg; 
+        --conicAngle: 18deg;
+        --color: rgb(129, 241, 129);
+        --c2: #2a63d4;
     }
+
     10% {
-        --conicAngle: 36deg; 
+        --conicAngle: 36deg;
+        --color: rgb(218, 106, 15);
     }
+
     15% {
         --conicAngle: 54deg;
+        --color: rgb(4, 0, 255);
     }
+
     20% {
-        --conicAngle: 72deg; 
+        --conicAngle: 72deg;
+        --color: rgb(247, 7, 235);
+        
     }
+
     25% {
-        --conicAngle: 90deg; 
+        --conicAngle: 90deg;
+        --color: rgb(208, 255, 0);
     }
+
     30% {
-        --conicAngle: 108deg; 
+        --conicAngle: 108deg;
+        --color: #f56ef5;
     }
+
     35% {
-        --conicAngle: 126deg; 
+        --conicAngle: 126deg;
+        --color: rgb(248, 248, 248);
+        --c2: #09ff00;
     }
+
     40% {
-        --conicAngle: 144deg; 
+        --conicAngle: 144deg;
+        --color: rgb(250, 216, 122);
     }
+
     45% {
-        --conicAngle: 162deg; 
+        --conicAngle: 162deg;
+        --color: rgb(0, 217, 255);
     }
+
     50% {
-        --conicAngle: 180deg; 
+        --conicAngle: 180deg;
+        --color: rgb(247, 250, 49);
     }
+
     55% {
-        --conicAngle: 198deg; 
+        --conicAngle: 198deg;
+        --color: rgb(78, 125, 228);
+        --c2: #ff0000;
     }
+
     60% {
-        --conicAngle: 216deg; 
+        --conicAngle: 216deg;
+        --color: rgb(106, 89, 252);
+        --c1: #000000;
     }
+
     65% {
-        --conicAngle: 234deg; 
+        --conicAngle: 234deg;
+        --color: rgb(255, 15, 255);
     }
+
     70% {
-        --conicAngle: 252deg; 
+        --conicAngle: 252deg;
+        --color: rgb(65, 235, 65);
     }
+
     75% {
-        --conicAngle: 270deg; 
+        --conicAngle: 270deg;
     }
+
     80% {
-        --conicAngle: 288deg; 
+        --conicAngle: 288deg;
+        --c2: #ffee00;
     }
+
     85% {
-        --conicAngle: 306deg; 
+        --conicAngle: 306deg;
     }
+
     90% {
-        --conicAngle: 324deg; 
+        --conicAngle: 324deg;
+        --c2: #ffffff;
     }
+
     95% {
-        --conicAngle: 342deg; 
+        --conicAngle: 342deg;
     }
+
     100% {
-        --conicAngle: 360deg; 
+        --conicAngle: 360deg;
+        
     }
 }
 
@@ -117,7 +162,7 @@ input[type="checkbox"] {
 
 .modal-btn {
     width: 10%;
-    background-color: green;
+    background-color: var(--color);
     padding: 2rem;
     border-radius: 30px;
     text-align: center;
